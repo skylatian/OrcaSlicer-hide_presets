@@ -1097,7 +1097,7 @@ void PlaterPresetComboBox::update()
         }
     }
     //BBS: move system to the end
-    if (!system_presets.empty())
+    if (!system_presets.empty() && false)
     {
         set_label_marker(Append(separator(L("System presets")), wxNullBitmap));
         for (std::map<wxString, wxBitmap*>::iterator it = system_presets.begin(); it != system_presets.end(); ++it) {
@@ -1333,7 +1333,7 @@ void TabPresetComboBox::update()
         }
     }
     //BBS: move system to the end
-    if (!system_presets.empty())
+    if (!system_presets.empty() && false)
     {
         set_label_marker(Append(separator(L("System presets")), wxNullBitmap));
         for (std::map<wxString, std::pair<wxBitmap*, bool>>::iterator it = system_presets.begin(); it != system_presets.end(); ++it) {
