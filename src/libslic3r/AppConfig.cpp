@@ -278,6 +278,10 @@ void AppConfig::set_defaults()
     if (get("remember_printer_config").empty()) {
         set_bool("remember_printer_config", true);
     }
+    
+    if (get("hide_system_presets").empty()) {
+        set_bool("hide_system_presets", false);
+    }
 
     if (get("auto_calculate_when_filament_change").empty()){
         set_bool("auto_calculate_when_filament_change", true);
